@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style/index.css">
+
+  <title>Modal</title>
+</head>
+
+<body>
+  <div class="overlay">
+    <div class="modal">
+      <h1 class="form__title">Добавить товар</h1>
+      <hr>
+
+      <button class="close"></button>
+
+      <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
+        <fieldset class="fieldset">
+
+          <label class="name">Наименование
+            <input class="form__input" type="text" name="name">
+          </label>
+
+          <label class="category">Категория
+            <input class="form__input" type="text" name="category">
+          </label>
+
+          <label class="units">Единицы измерения
+            <input class="form__input" type="text" name="units">
+          </label>
+
+          <label class="discount">Дисконт
+            <input class="checkbox checkbox__input" type="checkbox" name="discount">
+            <input class="form__input form__input_disabled" type="text">
+          </label>
+
+          <label class="description">Описание
+            <textarea class="form__textarea" name="description" cols="30" rows="3"></textarea>
+          </label>
+
+          <label class="count">Колличество
+            <input class=" form__input" type="number" name="count">
+          </label>
+
+          <label class="prise">Цена
+            <input class="form__input " type="number" name="prise">
+          </label>
+
+          <label class="image">Добавить изображение
+            <input class="form__image-upload" type="file" name="image">
+          </label>
+        </fieldset>
+
+        <div class="wrapper">
+          <p class="total-cost__text" >Итоговая стоимость:
+            <span class="total-cost__price">$ 900.00</span>
+          </p>
+          <button class="form__btn" type="submit">Добавить товар</button>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</body>
+
+</html>
