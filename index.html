@@ -8,12 +8,26 @@
 
   <link rel="stylesheet" href="style/index.css">
 
-  <title>Modal</title>
+  <script defer src="js/index.js"></script>
+  
+  <title>card-product</title>
 </head>
 
 <body>
-  <div class="overlay">
+
+  <div class="overlay__modal">
     <div class="modal">
+      <button class="modal__close"></button>
+      <span class="modal__error"></span>
+      <p class="modal__text">
+        Что-то пошло не так
+      </p>
+    </div>
+  </div>
+
+
+  <div class="overlay__card-product">
+    <div class="card-product">
       <h1 class="form__title">Добавить товар</h1>
       <hr>
 
