@@ -15,7 +15,7 @@
 
 <body>
 
-  <div class="overlay__modal">
+
     <div class="modal">
       <button class="modal__close"></button>
       <span class="modal__error"></span>
@@ -23,17 +23,24 @@
         Что-то пошло не так
       </p>
     </div>
-  </div>
 
 
   <div class="overlay__card-product">
     <div class="card-product">
-      <h1 class="form__title">Добавить товар</h1>
+      <div class="title__wrapper">
+        <h1 class="form__title">Добавить товар</h1>
+        <div class="title__wrapper--id">
+          <div class="title--id">id: 201910241</div>
+        <button class="title__btn--id">
+          <img src="/icon/Group.svg" alt="иконка кнопки"> 
+        </button>
+        </div>
+      </div>
       <hr>
 
       <button class="close"></button>
 
-      <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
+      <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
         <fieldset class="fieldset">
 
           <label class="name">Наименование
